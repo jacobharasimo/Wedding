@@ -1,0 +1,144 @@
+@import 'foundation';
+/*
+http://www.colourlovers.com/palette/853/Spring_Mint
+or
+http://www.colourlovers.com/palette/1602188/June_in_Paradise
+Primary Blue: 47CFEB
+Secondary accent: D4F1F7
+Primary Contrast: FFFFFF
+secondary contrast: C8E052
+*/
+#intro {
+    position: relative;
+}
+h1{font-size: 66px;
+
+    line-height: 1;
+    text-align: center;
+    color: #464141;}
+h4 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 51px;
+    line-height: 1;
+}
+h3{font-size:30px;}
+
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
+    color: dimgray;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button), .header-nav, .top-bar, .header-nav .top-bar-section ul {
+    background: #d44646 !important;
+}
+
+.header-outer {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.header-slider {
+    height: 590px;
+}
+
+.header-slider .orbit-container .orbit-slides-container > * {
+    height: 590px;
+    overflow: hidden;
+}
+
+.header-slider .orbit-container .orbit-slides-container img {
+    margin-top: -131px;
+    width: 100%;
+}
+
+.header-slider .orbit-timer {
+    display: none !important;
+}
+
+.header-nav .top-bar-section ul li > a {
+    font-size: 1em;
+}
+
+.header-nav .top-bar-section ul li {
+
+}
+
+.top-bar {
+    line-height: 58px;
+    height: 58px;
+}
+
+.header-nav .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+    height: 58px !important;
+}
+
+.header-nav .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+    border-right: solid 1px #636363;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-nav .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background: inherit;
+}
+
+span.accent-color {
+    color: #d44646;
+}
+
+h4.full-wedding-date {
+    color: dimgray;
+}
+
+.panel.person {
+    margin-bottom: 0;
+    background: white;
+    border: none;
+}
+
+.wedding-couple {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.wedding-couple ul li {
+    padding-bottom: 0;
+}
+.wedding-couple ul li:first-child:after{
+    font-family: "foundation-icons";
+    content: "\f199";
+    width: 61px;
+    height: 61px;
+    color: #fff;
+    background: #d44646;
+    border-radius: 45px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1;
+    position: absolute;
+    top: 58%;
+    right: 47.5%;
+    z-index: 10000
+}
+
+.wedding-couple h2 {
+    color: #d44646;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.wedding-relative-container{display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 999;}
+h1.news{
+    padding: 65px 0 25px;
+    line-height: 1;
+    color: #464141;}
+.accent-color{color:#d44646;}
