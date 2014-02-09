@@ -1,4 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import 'foundation';
+$nav-bar-height:58px;
+$accent-color:#d44646;
+$primary-font-color:dimgray;
+$secondary-font-color:white;
+$slider-height:590px;
+$slider-image-offset:(862px-$slider-height)/2;
+
+
+
+
+
+/* jQuery Countdown styles 2.0.0. */
+
+.countdown-rtl {
+  direction: rtl;
+}
+.countdown-holding span {
+  color: $secondary-font-color;
+}
+.countdown-row {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.countdown-show4 .countdown-section {
+  width: 24.5%;
+}
+.countdown-section {
+  $padding-size:.15em;
+  padding-top: $padding-size;
+  padding-bottom: $padding-size;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background-color:$accent-color;
+}
+.countdown-section:last-child:after{display:none;content:none;}
+.countdown-section:after{
+  content: ':';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: $primary-font-color;
+  height: 100%;
+  font-size: 2em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.countdown-amount {
+  font-size: 1.5em;
+  line-height:.75em;
+}
+.countdown-period{font-size:.75em;line-height:1.4em}
+.countdown-amount,.countdown-period {
+  width: 90%;
+  display: block;
+}
+.countdown-descr {
+  display: block;
+  width: 100%;
+}
+
 /*
 http://www.colourlovers.com/palette/853/Spring_Mint
 or
@@ -8,11 +76,12 @@ Secondary accent: D4F1F7
 Primary Contrast: FFFFFF
 secondary contrast: C8E052
 */
+body,html,p{font-family: 'Open Sans', sans-serif;}
+h1,h2,h3,h4,h5,h6{font-family: 'Nixie One', cursive;font-weight: normal;}
 #intro {
     position: relative;
 }
 h1{font-size: 66px;
-
     line-height: 1;
     text-align: center;
     color: #464141;}
@@ -27,11 +96,12 @@ h2 {
 h3{font-size:30px;}
 
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
-    color: dimgray;
+    color: $primary-font-color;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button), .header-nav, .top-bar, .header-nav .top-bar-section ul {
-    background: #d44646 !important;
+    background: $accent-color !important;
+  line-height: $nav-bar-height;
 }
 
 .header-outer {
@@ -40,16 +110,16 @@ h3{font-size:30px;}
 }
 
 .header-slider {
-    height: 590px;
+    height: $slider-height;
 }
 
 .header-slider .orbit-container .orbit-slides-container > * {
-    height: 590px;
+    height: $slider-height;
     overflow: hidden;
 }
 
 .header-slider .orbit-container .orbit-slides-container img {
-    margin-top: -131px;
+    margin-top: -$slider-image-offset;
     width: 100%;
 }
 
@@ -66,35 +136,45 @@ h3{font-size:30px;}
 }
 
 .top-bar {
-    line-height: 58px;
-    height: 58px;
+    line-height: $nav-bar-height;
+    height: $nav-bar-height;
 }
 
 .header-nav .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
-    height: 58px !important;
+    height: $nav-bar-height !important;
 }
 
 .header-nav .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-right: solid 1px #636363;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left:none;
 }
-
+.header-nav .top-bar-section li:not(.has-form) a:not(.button){
+  font-weight: normal;
+  text-transform: uppercase;
+}
 .header-nav .top-bar-section li:not(.has-form) a:not(.button):hover {
     background: inherit;
+
 }
 
 span.accent-color {
-    color: #d44646;
+    color: $accent-color;
 }
 
 h4.full-wedding-date {
-    color: dimgray;
+    color: $primary-font-color;
 }
 
 .panel.person {
     margin-bottom: 0;
-    background: white;
+    background: #ffffff;
     border: none;
+}
+.panel.person img{
+  height:7.125em;
+  width:7.125em;
+  border-radius: 7.125em;
 }
 
 .wedding-couple {
@@ -108,26 +188,25 @@ h4.full-wedding-date {
     padding-bottom: 0;
 }
 .wedding-couple ul li:first-child:after{
-    font-family: "foundation-icons";
-    content: "\f199";
-    width: 61px;
-    height: 61px;
-    color: #fff;
-    background: #d44646;
-    border-radius: 45px;
-    padding-top: 15px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 1;
-    position: absolute;
-    top: 58%;
-    right: 47.5%;
-    z-index: 10000
+  font-family: "foundation-icons";
+  content: "\f199";
+  width: 2em;
+  height: 2em;
+  font-size: 2em;
+  line-height: 2em;
+  border-radius: 2em;
+  color: #fff;
+  background: #d44646;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 4em;
+  right: 14.6em;
+  z-index: 10000;
 }
 
 .wedding-couple h2 {
-    color: #d44646;
+    color: $accent-color;
     margin-bottom: 15px;
     margin-top: 10px;
     display: inline-block;
@@ -141,4 +220,38 @@ h1.news{
     padding: 65px 0 25px;
     line-height: 1;
     color: #464141;}
-.accent-color{color:#d44646;}
+.accent-color{color:$accent-color;}
+hr.section-divider {
+  border: none;
+  max-width: 940px;
+  margin: 20px auto;
+  height: 1px;
+  background: #e0e0dd;
+  position: relative;
+  overflow: visible;
+  z-index: 100;
+  text-align: center;
+  display: block;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+}
+hr.section-divider:after {
+  font-family:foundation-icons;
+  background: $accent-color;
+  content: "\f159";
+  display: inline-block;
+  position: relative;
+  font-size: 1.25em;
+  top:-.625em;
+  color: $secondary-font-color;
+  height: 1.5em;
+  width: 1.5em;
+  line-height:1.5em;
+  border-radius: 1.5em;
+  padding-top: 1px;
+}
+.panel.no-background{background:transparent;}
+.panel.no-border{border:none;}
+.panel.countdown{font-size:2em;color:$secondary-font-color;}

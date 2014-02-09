@@ -1,0 +1,22 @@
+{
+  "name": "kbwood_countdown",
+  "homepage": "https://github.com/kbwood/countdown",
+  "main":[
+      "./jquery.plugin.js",
+      "./jquery.countdown.js"
+      ],
+    "dependencies": {
+        "jquery": "2.1.0"
+    },
+  "version": "2.0.0",
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.0",
+    "commit": "b99435df48d7f1fe5c50d0d1fda98e3e855342d1"
+  },
+  "_source": "git://github.com/kbwood/countdown.git",
+  "_target": "~2.0.0",
+  "_originalSource": "kbwood_countdown",
+  "_direct": true
+}
