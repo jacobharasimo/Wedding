@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Nixie+One);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+//@import url('http://fonts.googleapis.com/css?family=Nixie+One');
+//@import url('http://fonts.googleapis.com/css?family=Open+Sans');
 @import 'foundation';
 $nav-bar-height:58px;
 $accent-color:#d44646;
@@ -77,7 +77,7 @@ Primary Contrast: FFFFFF
 secondary contrast: C8E052
 */
 body,html,p{font-family: 'Open Sans', sans-serif;}
-h1,h2,h3,h4,h5,h6{font-family: 'Nixie One', cursive;font-weight: normal;}
+h1,h2,h3,h4,h5,h6{font-family: 'Nixie One', 'Raleway', sans;font-weight: normal;}
 #intro {
     position: relative;
 }
